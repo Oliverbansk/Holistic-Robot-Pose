@@ -1,1 +1,212 @@
-<h1>Project page will go online soon! Thank you!</h1>
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://walter0807.github.io/Social-CH/ -->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Social Motion Prediction with Cognitive Hierarchies (NeurIPS 2023)</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
+    <style> 
+        span {
+          font-family: Courier;
+        }
+        p {
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                <b>Real-time Holistic Robot Pose Estimation with Unknown States</b>
+            
+            
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12 text-center" style="font-size: 24px">
+                <ul class="list-inline" style="font-size: 20px; color: black">
+                    <li>
+                        <a href="https://github.com/Oliverbansk", target="_blank", style="font-size: 20px; color: black">Shikun Ban</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Julyfan77", target="_blank", style="font-size: 20px; color: black">Juling Fam</a>
+                    </li>
+                    <li>
+                        <a href="https://wentao.live/", target="_blank", style="font-size: 20px; color: black">Wentao Zhu</a>
+                    </li>
+                    <li>
+                        <a href="https://shirleymaxx.github.io/", target="_blank", style="font-size: 20px; color: black">Xiaoxuan Ma</a>
+                    </li>
+                    <li>
+                        <a href="", target="_blank", style="font-size: 20px; color: black">Yu Qiao</a>
+                    </li>
+                    <li>
+                        <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank", style="font-size: 20px; color: black">Yizhou Wang</a>
+                    </li>
+                </ul>
+                <br>
+                Peking University, Shanghai Jiaotong University
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="nav nav-pills nav-justified" style="margin-top:10px;">
+                    <a href="https://arxiv.org/pdf/2311.04726.pdf" target="_blank" ,="" style="color: #4B527E;">
+                            <strong><font size="+2">[Paper]</font></strong>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/Walter0807/Social-CH" target="_blank" ,="" style="color: #4B527E;">
+                            <strong><font size="+2">[Code]</font></strong>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/Walter0807/Social-CH/tree/main/data" target="_blank" ,="" style="color: #4B527E;">
+                            <strong><font size="+2">[Data]</font></strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    </a><a href="https://www.youtube.com/watch?v=pVBICYpGhyU" target="_blank" ,="" style="color: #4B527E;">
+                            <strong><font size="+2">[Video]</font></strong>
+                    </a>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <img src="./roc/teaser.png" width="100%" style="border-style: none">
+                
+        </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <h2>
+                    <b>Abstract</b>
+                </h2>
+                <p class="text-justify">
+                Estimating robot pose from RGB images is a crucial problem in computer vision and robotics. While previous methods have achieved promising performance, most of them presume full knowledge of robot internal states, e.g. ground-truth robot joint angles, which are not always available in real-world scenarios. On the other hand, existing approaches that estimate robot pose without joint state priors suffer from heavy computation burdens and thus cannot support real-time applications. This work addresses the urgent need for efficient robot pose estimation with unknown states. We propose an end-to-end pipeline for real-time, holistic robot pose estimation from a single RGB image, even in the absence of known robot states. Our method decomposes the problem into estimating camera-to-robot rotation, robot state parameters, keypoint locations, and root depth. We further design a corresponding neural network module for each task. This approach allows for learning multi-facet representations and facilitates sim-to-real transfer through self-supervised learning. Notably, our method achieves inference with a single feedforward, eliminating the need for costly test-time iterative optimization. As a result, it delivers a 12 times speed boost with state-of-the-art accuracy, enabling real-time holistic robot pose estimation for the first time.
+                </p>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <h2>
+                    <b>Framework</b>
+                </h2>
+                <img src="./roc/framework.png" width="100%" style="border-style: none">
+
+                <p class="text-justify">
+                    We factorize the holistic robot pose estimation task into several sub-tasks, including the estimation of camera-to-robot rotation, robot joint states, root depth, and root-relative keypoint locations. We then design corresponding neural network modules for each sub-task.
+                </p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>
+                    <b>Results</b>
+                </h2>
+                <h3 style="font-weight: 500;">Comparison with Ground-Truth and Robopose</h3>
+                <!-- <h4><b>Case 1</b></h4> -->
+                <p><br><b>Panda Azure</b></p>
+                <img src="./roc/azure_0-21.gif" width="100%" style="border-style: none">
+                <img src="./roc/azure_36.gif" width="100%" style="border-style: none">
+                <p><br><b>Panda Kinect:</b></p>
+                <img src="./roc/kinect_225_240.gif" width="100%" style="border-style: none">
+                <img src="./roc/kinect_6.gif" width="100%" style="border-style: none">
+                <p><br><b>Panda Realsense:</b></p>
+                <img src="./roc/realsense.gif" width="100%" style="border-style: none">
+                <p><br><b>Panda Orb:</b></p>
+                <img src="./roc/orb_1049.gif" width="100%" style="border-style: none">
+                <!-- <video id="pred_2" width="100%" autoplay loop muted>
+                    <source src="assets/pred_2.mp4" type="video/mp4" />
+                </video> -->
+                <br><br>
+                <p>
+                    It illustrates that our approach's ability to produce high-quality estimates across different robot morphologies. Particularly, our approach demonstrates superior performance in highly challenging cases, including self-occlusions, truncations, and extreme lighting conditions.
+                </p>
+                <!-- <br> -->
+                <h3 style="font-weight: 500;">Qualitative Results for 3 Different Robots</h3>
+                  <!-- <h3>Cognitive Hierarchies</h3> -->
+                <!-- <p><br><b>Case 1:</b></p> -->
+                <img src="./roc/qualitative_results.png" width="100%" style="border-style: none">
+                <p><br><b>Results for Lab Environment</b></p>
+                <img src="./roc/labres.jpg" width="100%" style="border-style: none">
+
+                <!-- <br><br>
+                    <ul>
+                      <li><p>[Level-1] Player <i style="color: #8684ff;">Purple</i> passes to Player <i style="color: #6296f3;">Blue</i>.</p></li>
+                      <li><p>[Level-2] Accordingly, Player <i style="color: #e1a95d;">Brown</i> generates the stealing action and causes a defense gap between Player <i style="color: #6296f3;">Blue</i> and Player <i style="color: #6db9c0;">Cyan</i>.</p></li>
+                      <li><p>[Level-3] Therefore, Player <i style="color: #ff8902;">Orange</i> turns around and steps into the middle of player <i style="color: #6296f3;">Blue</i> and Player <i style="color: #6db9c0;">Cyan</i> to fill the gap, which is closer to expert demonstration.</p></li>
+                    </ul> -->
+        
+                <!-- <p><br><b>Case 2:</b></p>
+                <img src="./roc/ch_2.gif" width="100%" style="border-style: none">
+
+                <br><br>
+                <ul>
+                    <li><p>[Level-1] Player <i style="color:#8684ff">Purple</i> makes a reception and a passing move.</p></li>
+                    <li><p>[Level-2] Thus, as a defender, Player <i style="color:#e1a95d">Brown</i> generates the action to turn to Player <i style="color:#8684ff">Purple</i>. His teammate, Player <i style="color:#ff8902">Orange</i>, is also getting close to Player <i style="color:#8684ff">Purple</i> to defend.</p></li>
+                    <li><p>[Level-3] In light of this, Player <i style="color:#ff8902">Orange</i> chooses a different action, turning to Player <i style="color:#6db9c0">Cyan</i>. The level-3 actions are also closer to ground truth.</p></li>
+                </ul> -->
+                <p>
+                    From these examples, we can see that our model ...
+
+            </div>
+        </div>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h2>
+            <b>Citation</b>
+        </h2>
+        <div class="form-group col-md-10 col-md-offset-1">
+            <div style="font-size: 18px;">
+                <textarea id="bibtex" class="form-control" readonly="" style="display: none;">@inproceedings{zhu2023social,
+    title={Social Motion Prediction with Cognitive Hierarchies},
+    author={Zhu, Wentao and Qin, Jason and Lou, Yuke and Ye, Hang and Ma, Xiaoxuan and Ci, Hai and Wang, Yizhou},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+    year={2023}
+}</textarea><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="min-width: 18px;"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="min-height: 18px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 30px; min-height: 214px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure">AخA</div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 20.5625px;">&nbsp;</div></div><div class="CodeMirror-code" style=""><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">@inproceedings{zhu2023social,</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title={Social Motion Prediction with Cognitive Hierarchies},</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author={Zhu, Wentao and Qin, Jason and Lou, Yuke and Ye, Hang and Ma, Xiaoxuan and Ci, Hai and Wang, Yizhou},</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2023}</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 214px;"></div><div class="CodeMirror-gutters" style="display: none; height: 244px;"></div></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p style="text-align:center;font-size:small;">
+                    Template courtesy of <a href="https://jonbarron.info/" ,="" target="_blank">Jon Barron</a>.
+                  </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
