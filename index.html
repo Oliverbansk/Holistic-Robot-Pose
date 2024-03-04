@@ -92,9 +92,23 @@
 
         <div class="row ">
             <br>
-            <div class="col-md-8 col-md-offset-2 ">
-                <img src="./roc/teaser.png" width="100%" style="border-style: none">
+            <div class="col-md-8 col-md-offset-1">
+                <img src="./roc/teaser_gif.gif" width="120%" style="border-style: none">
+                
             </div>
+            <!-- <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" style="font-size:15px">
+                    The majority of previous works assume known robot joint states and focus solely on estimating the camera-to-robot pose. 
+                    In contrast, the <strong>holistic robot pose estimation problem (our setting)</strong> 
+                    requires estimating both joint states and the camera-to-robot pose, 
+                    given only an RGB image without known joint states. 
+                </p>
+                <p class="text-justify" style="font-size:15px">
+                    For holistic robot pose estimation, 
+                    Previous work (RoboPose) uses costly test-time optimization (Render-and-Compare) to iteratively refine the predictions. 
+                    In contrast, <strong>our feed-forward method achieves state-of-the-art accuracy with a 12-time speed boost</strong>.
+                </p>   
+            </div> -->
         </div>
 
 
@@ -105,7 +119,22 @@
                     <b>Abstract</b>
                 </h2>
                 <p class="text-justify">
-                Estimating robot pose from RGB images is a crucial problem in computer vision and robotics. While previous methods have achieved promising performance, most of them presume full knowledge of robot internal states, e.g. ground-truth robot joint angles, which are not always available in real-world scenarios. On the other hand, existing approaches that estimate robot pose without joint state priors suffer from heavy computation burdens and thus cannot support real-time applications. This work addresses the urgent need for efficient robot pose estimation with unknown states. We propose an end-to-end pipeline for real-time, holistic robot pose estimation from a single RGB image, even in the absence of known robot states. Our method decomposes the problem into estimating camera-to-robot rotation, robot state parameters, keypoint locations, and root depth. We further design a corresponding neural network module for each task. This approach allows for learning multi-facet representations and facilitates sim-to-real transfer through self-supervised learning. Notably, our method achieves inference with a single feedforward, eliminating the need for costly test-time iterative optimization. As a result, it delivers a 12 times speed boost with state-of-the-art accuracy, enabling real-time holistic robot pose estimation for the first time.
+                    Estimating robot pose from RGB images is a crucial problem in computer vision and robotics. 
+                    While previous methods have achieved promising performance, 
+                    most of them presume full knowledge of robot internal states, <em>e.g.</em> ground-truth robot joint angles. 
+                    However, this assumption is not always valid in practical situations. 
+                    In real-world applications such as multi-robot collaboration or human-robot interaction, 
+                    the robot joint states might not be shared or could be unreliable. 
+                    On the other hand, existing approaches that estimate robot pose without joint state priors suffer from heavy computation burdens 
+                    and thus cannot support real-time applications. 
+                </p>
+                <p class="text-justify">
+                    This work introduces an efficient framework for real-time robot pose estimation from RGB images without requiring known robot states. 
+                    Our method estimates camera-to-robot rotation, robot state parameters, keypoint locations, and root depth, 
+                    employing a neural network module for each task to facilitate learning and sim-to-real transfer. 
+                    Notably, it achieves inference in a single feedforward pass without iterative optimization. 
+                    Our approach offers a <strong>12-time speed increase</strong> with <strong>state-of-the-art accuracy</strong>, 
+                    enabling <strong>real-time holistic robot pose estimation</strong> for the first time.
                 </p>
             </div>
         </div>
